@@ -1,0 +1,273 @@
+.CodeMirror .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
+  background: transparent !important;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Thanks to Jakob from CodePen for the awesome animation! */
+/* Check him out at https://codepen.io/JacobDvlpr */
+
+.box {
+  margin: 80px auto 0px;
+  width: 85px;
+  height: 85px;
+  position: relative;
+  animation: rotate 4s infinite linear;
+}
+
+.jakobs-loading {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border-radius: 50px;
+}
+
+.jakobs-loading:nth-child(1) {
+  animation: animate1 12s infinite;
+}
+
+.jakobs-loading:nth-child(2) {
+  animation: animate2 12s infinite;
+  animation-delay: 1s;
+  bottom: 0;
+  left: 0;
+}
+
+.jakobs-loading:nth-child(3) {
+  animation: animate3 12s infinite;
+  animation-delay: 2s;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes animate1 {
+  0% {
+      top: 0;
+      left: 0;
+      background: none;
+  }
+  4% {
+      left: 0;
+      width: 100%;
+      background: transparent;
+  }
+  8% {
+      width: 30%;
+      height: 30%;
+      left: 70%;
+      background: none;
+  }
+  25% {
+      width: 30%;
+      height: 30%;
+      left: 70%;
+      background: none;
+  }
+  29% {
+      top: 0;
+      height: 100%;
+      background: transparent;
+  }
+  33% {
+      top: 70%;
+      left: 70%;
+      height: 30%;
+      width: 30%;
+      background: none;
+  }
+  50% {
+      top: 70%;
+      left: 70%;
+      height: 30%;
+      width: 30%;
+      background: none;
+  }
+  54% {
+      width: 100%;
+      left: 0;
+      background: transparent;
+  }
+  58% {
+      width: 30%;
+      height: 30%;
+      left: 0;
+      top: 70%;
+      background: none;
+  }
+  75% {
+      width: 30%;
+      height: 30%;
+      left: 0;
+      top: 70%;
+      background: none;
+  }
+  79% {
+      height: 100%;
+      top: 0;
+      background: transparent;
+  }
+  83% {
+      left: 0;
+      top: 0;
+      height: 30%;
+      background: none;
+  }
+  87% {
+      left: 0;
+      top: 0;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+      top: 70%;
+      left: 0;
+  }
+  4% {
+      top: 0;
+      height: 100%;
+      background: transparent;
+  }
+  8% {
+      width: 30%;
+      height: 30%;
+      top: 0;
+      background: none;
+  }
+  25% {
+      width: 30%;
+      height: 30%;
+      top: 0;
+      background: none;
+  }
+  29% {
+      left: 0;
+      width: 100%;
+      background: transparent;
+  }
+  33% {
+      left: 70%;
+      height: 30%;
+      width: 30%;
+      background: none;
+  }
+  50% {
+      left: 70%;
+      height: 30%;
+      width: 30%;
+      background: none;
+  }
+  54% {
+      height: 100%;
+      top: 0;
+      background: transparent;
+  }
+  58% {
+      width: 30%;
+      height: 30%;
+      top: 70%;
+      background: none;
+  }
+  75% {
+      width: 30%;
+      height: 30%;
+      top: 70%;
+      left: 70%;
+      background: none;
+  }
+  79% {
+      width: 100%;
+      left: 0;
+      background: transparent;
+  }
+  83% {
+      width: 30%;
+      height: 30%;
+      top: 70%;
+      background: none;
+  }
+  100% {
+      top: 70%;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+      top: 70%;
+      left: 70%;
+  }
+  4% {
+      left: 0;
+      width: 100%;
+      background: transparent;
+  }
+  8% {
+      width: 30%;
+      height: 30%;
+      background: none;
+  }
+  25% {
+      width: 30%;
+      height: 30%;
+      top: 70%;
+      background: none;
+  }
+  29% {
+      height: 100%;
+      top: 0;
+      background: transparent;
+  }
+  33% {
+      height: 30%;
+      width: 30%;
+      background: none;
+  }
+  50% {
+      height: 30%;
+      width: 30%;
+      background: none;
+  }
+  54% {
+      width: 100%;
+      left: 0;
+      background: transparent;
+  }
+  58% {
+      width: 30%;
+      height: 30%;
+      left: 70%;
+      background: none;
+  }
+  75% {
+      width: 30%;
+      height: 30%;
+      left: 70%;
+      background: none;
+  }
+  79% {
+      height: 100%;
+      top: 0;
+      background: transparent;
+  }
+  83% {
+      width: 30%;
+      height: 30%;
+      top: 70%;
+      background: none;
+  }
+  100% {
+      top: 70%;
+      left: 70%;
+  }
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
