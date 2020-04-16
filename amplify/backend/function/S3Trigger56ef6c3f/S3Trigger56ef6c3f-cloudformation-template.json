@@ -60,8 +60,8 @@
 				"Timeout": "300",
 				"MemorySize": 1024,
 				"Code": {
-					"S3Bucket": "amplify-jamstack-cms-dev-160039-deployment",
-					"S3Key": "amplify-builds/S3Trigger56ef6c3f-574d6f657a30715a5162-build.zip"
+					"S3Bucket": "amplify-jamstack-cms-jamdev-70924-deployment",
+					"S3Key": "amplify-builds/S3Trigger56ef6c3f-47424f4e45346e78386f-build.zip"
 				}
 			}
 		},

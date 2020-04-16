@@ -4,7 +4,7 @@ exports.handler = async (event, context, callback) => {
   const cognitoidentityserviceprovider = new aws.CognitoIdentityServiceProvider({ apiVersion: '2016-04-18' });
 
   let isAdmin = false
-  const adminEmails = ["dabit3@gmail.com"]
+  const adminEmails = ["artorrijos@gmail.com"]
 
   if (adminEmails.indexOf(event.request.userAttributes.email) !== -1) {
     isAdmin = true
